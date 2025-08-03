@@ -129,7 +129,7 @@ body {
     background: transparent;
     border: 2px solid #2563eb;
     color: #2563eb;
-    border-radius: 8px;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -173,7 +173,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #6694ea 0%, #4b5ea2 100%);
     color: white;
     min-height: 100vh;
     display: flex;
@@ -220,7 +220,7 @@ body {
 
 .btn {
     padding: 12px 24px;
-    border-radius: 8px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -230,7 +230,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #2563eb;
+    background-color: #3849e6;
     color: white;
 }
 
