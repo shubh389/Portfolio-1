@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Portfolio</a>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle-navbar" id="theme-toggle-navbar" aria-label="Toggle dark mode"
+          title="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="nav-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Divyanshu</span></h1>
+          <p class="hero-description">
+            "I'm a passionate software developer dedicated to building elegant solutions for complex problems.
+            I specialize in Python Development, with a strong foundation in algorithms and data structures."
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="https://drive.google.com/file/d/1xbMNYnRnZK-GLz0BXCu8be0LIAVt3nvU/view?usp=share_link" class="btn btn-secondary">Download Resume</a>
+          </div>
+
+        </div>
+
+        <div class="hero-image">
+          <img src="https://i.postimg.cc/zGGYkwH6/Whats-App-Image-2025-08-02-at-23-33-43.jpg" alt="Profile"
+            class="profile-img">
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat-item">
+          <h3>1+</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat-item">
+          <h3>8</h3>
+          <p>Projects Completed</p>
+        </div>
+        <!-- <div class="stat-item">
+          <h3>5+</h3>
+          <p>Happy Clients</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <!-- <p>
+            I'm a passionate software developer with over 1 years of experience, specializing in Python development. 
+            I’m dedicated to building elegant, scalable solutions to complex problems, with a strong foundation in 
+            algorithms, data structures, and modern web technologies. I prioritize writing clean, maintainable code 
+            that adheres to industry best practices.
+
+          </p> -->
+          <p style="font-size: 18px; line-height: 1.8; color: #333;">
+            <strong style="color: #00BCD4;">Hello! I'm Divyanshu,</strong> a passionate
+            <strong style="color: #E67E22;">Software Developer</strong> currently pursuing my
+            <strong style="color: #3498DB;">Bachelor's in Computer Science & Engineering (Data Science)</strong>
+            from <strong style="color: #16A085;">Netaji Subhash Engineering College, Kolkata, West Bengal</strong>. I'm
+            in my second year of study and continuously sharpening my skills to stay ahead in the tech world.
+          </p>
+
+          <p style="font-size: 18px; line-height: 1.8; color: #333;">
+            With over <strong style="color: #27AE60;">1 year of hands-on experience</strong> in
+            <strong style="color: #9B59B6;">Python development</strong>, I enjoy turning complex problems into elegant,
+            scalable, and efficient solutions. I have a solid foundation in
+            <strong style="color: #E74C3C;">algorithms</strong>,
+            <strong style="color: #E74C3C;">data structures</strong>, and
+            <strong style="color: #F39C12;">modern web technologies</strong>.
+          </p>
+
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="feature-content">
+                <h4 class="clean-code-title">Clean Code</h4>
+                <p>Writing maintainable, efficient, and well-documented code that follows best practices.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Continuous Learning</h4>
+                <p>Staying updated with the latest technologies and best practices in web development.</p>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Problem Solving</h4>
+                <p>Approaching challenges with a systematic mindset and finding innovative solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=500&h=600&fit=crop"
+            alt="About Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C/C++</span>
+            <!-- <span class="skill-tag">MATLAB</span> -->
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <!-- <span class="skill-tag">Material-UI</span> -->
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Spring Boot</span>
+            <!-- <span class="skill-tag">Redis</span> -->
+          </div>
+        </div>
+
+        <!-- <div class="skill-category">
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Neon DB</span>
+          </div>
+        </div> -->
+
+        <!-- <div class="skill-category">
+          <h3>AI/ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Mistral API</span>
+            <span class="skill-tag">Pinecone</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Groq API</span>
+            <span class="skill-tag">Prompt Engineering</span>
+          </div>
+        </div> -->
+
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Linux</span>
+            <!-- <span class="skill-tag">Docker</span> -->
+            <span class="skill-tag">Vercel</span>
+            <!-- <span class="skill-tag">Railway</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/HsysSVcq/Screenshot-2025-08-03-at-8-15-05-PM.png" alt="Kothik">
+          </div>
+          <div class="project-content">
+            <h3>Kothik</h3>
+            <p>Next-gen multi-agent cybersecurity platform for autonomous, ethical penetration testing and real-time
+              analytics.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JS</span>
+              <span class="tech-tag">THREE JS</span>
+              <span class="tech-tag">VERSEL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Divyanshu-Maurya/Kothik" class="project-link">View Code</a>
+              <a href="https://kothik-silk.vercel.app/" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/pLSw3Bwk/Screenshot-2025-08-03-at-8-17-36-PM.png" alt="Annadaan">
+          </div>
+          <div class="project-content">
+            <h3>Annadaan</h3>
+            <p>Community driven platform enabling surplus food redistribution via live tracking, maps, responsive UI and
+              donation insights.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">MONGODB</span>
+              <span class="tech-tag">INNGST</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Divyanshu-Maurya/Hackathon_Projects/tree/main/Anndaan-byalphadecoders"
+                class="project-link">View Code</a>
+              <a href="https://anndaaan.vercel.app" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/tC9q0pVY/Screenshot-2025-08-03-at-9-44-42-PM.png" alt="ATM Web Interface">
+          </div>
+          <div class="project-content">
+            <h3>ATM Web Interface</h3>
+            <p>Secure, file based banking interface enabling user authentication, transaction tracking, and account
+              level analytics.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JS</span>
+              <span class="tech-tag">PYTHON</span>
+              <span class="tech-tag">FLASK</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Divyanshu-Maurya/Brainwave_Matrix_Intern" class="project-link">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/pV0rCw3z/Whats-App-Image-2025-08-03-at-20-40-15.jpg"
+              alt="Inventory Management System">
+          </div>
+          <div class="project-content">
+            <h3>Inventory Management System</h3>
+            <p>Lightweight inventory tracker with stock control, file based persistence, and automated report
+              generation.</p>
+            <div class="project-tech">
+              <span class="tech-tag">PYTHON</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Divyanshu-Maurya/Brainwave_Matrix_Intern_2" class="project-link">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/nzV2bsZ3/Screenshot-2025-08-03-at-9-49-12-PM.png" alt="Tic-Tac-Toe game">
+          </div>
+          <div class="project-content">
+            <h3>Tic-Tac-Toe game</h3>
+            <p>Terminal-based Tic Tac Toe game with input validation, score tracking, and dynamic win-check logic for
+              two players.</p>
+            <div class="project-tech">
+              <span class="tech-tag">C/C++</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Divyanshu-Maurya/tic-tac-toe" class="project-link">View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experience & Education</h2>
+
+      <div class="timeline">
+        <!-- <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Full Stack Developer</h3>
+            <h4>Tech Company</h4>
+            <span class="timeline-date">2023 - Present</span>
+            <p>Developing modern web applications using React, Node.js, and cloud technologies. Leading a team of 3
+              developers and implementing CI/CD pipelines.</p>
+          </div>
+        </div> -->
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Python Programming Intern</h3>
+            <h4>BrainWave Matrix</h4>
+            <span class="timeline-date">June 2025 - July 2025</span>
+            <p>Developed a fully functional ATM Web Interface using Python.
+              Gained hands on experience in backend development and responsive UI design.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Bachelor's in CSE(Data Science)</h3>
+            <h4>Netaji Subhash Engineering College</h4>
+            <span class="timeline-date">2024 - 2028</span>
+            <p>Focused on software engineering, algorithms, and machine learning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>divyanshurds@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Kolkata, India</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/Divyanshu-Maurya" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/divyanshu-maurya/" class="social-link"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/_DK_M" class="social-link"><i class="fab fa-x"></i></a>
+            <a href="https://leetcode.com/u/divyanshu-maurya/" class="social-link"><i class="fab fa-leetcode"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Me a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Divyanshu-Maurya" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/divyanshu-maurya/" class="social-link"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/_DK_M" class="social-link"><i class="fab fa-x"></i></a>
+          <a href="https://leetcode.com/u/divyanshu-maurya/" class="social-link"><i class="fab fa-leetcode"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Divyanshu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
