@@ -20,6 +20,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!mobileMenu.contains(e.target) && !navMenu.contains(e.target)) {
+            mobileMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // Handle window resize for mobile menu
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 767) {
+            mobileMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
@@ -503,6 +519,68 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize scroll to top button
     initScrollToTop();
+
+    // Responsive image handling
+    function handleResponsiveImages() {
+        const profileImg = document.querySelector('.profile-img');
+        const projectImages = document.querySelectorAll('.project-image img');
+        const aboutImage = document.querySelector('.about-image img');
+        
+        function updateImageSizes() {
+            const screenWidth = window.innerWidth;
+            
+            // Update profile image based on screen size
+            if (profileImg) {
+                if (screenWidth <= 375) {
+                    profileImg.style.width = '180px';
+                    profileImg.style.height = '240px';
+                } else if (screenWidth <= 575) {
+                    profileImg.style.width = '200px';
+                    profileImg.style.height = '280px';
+                } else if (screenWidth <= 767) {
+                    profileImg.style.width = '250px';
+                    profileImg.style.height = '320px';
+                } else if (screenWidth <= 991) {
+                    profileImg.style.width = '280px';
+                    profileImg.style.height = '360px';
+                } else {
+                    profileImg.style.width = '352px';
+                    profileImg.style.height = '480px';
+                }
+            }
+        }
+        
+        // Update on load and resize
+        updateImageSizes();
+        window.addEventListener('resize', updateImageSizes);
+    }
+
+    // Initialize responsive images
+    handleResponsiveImages();
+
+    // Touch events for better mobile interaction
+    function initTouchSupport() {
+        // Add touch feedback to buttons
+        const buttons = document.querySelectorAll('.btn, .social-link, .project-link');
+        
+        buttons.forEach(button => {
+            button.addEventListener('touchstart', function() {
+                this.style.transform = 'scale(0.95)';
+            });
+            
+            button.addEventListener('touchend', function() {
+                this.style.transform = '';
+            });
+        });
+
+        // Improve scrolling on iOS
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+            document.body.style.webkitOverflowScrolling = 'touch';
+        }
+    }
+
+    // Initialize touch support
+    initTouchSupport();
 
     // Add cursor trail effect (optional)
     function initCursorTrail() {
